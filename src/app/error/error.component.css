@@ -1,0 +1,21 @@
+.container{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+.container img{
+    width: 500px;
+    border-radius: 5%;
+    border: 3px solid lightseagreen;
+}
+@media (max-width:300px) {
+    .container{
+        margin-top: 8%;
+        
+    }
+    .container img{
+        width: 250px;
+        border-radius: 5%;
+        border: 3px solid lightseagreen;
+    }
+}

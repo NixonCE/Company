@@ -1,0 +1,30 @@
+
+<div class="container">
+    <button *ngIf="ini2" (click)="onChange()" class="btPro">Developer</button>
+    <img *ngIf="ini" class="profile" (click)="onChange()" [src]=[imgPro] alt="Nixon Cespedes">
+    <div class="grid">
+        <img [src]=[img1] alt="">
+        <div class="title">
+            <h2>Nixon Cespedes</h2>
+            <h3 class="titp">Desarrollador Front-End</h3>
+            <h4>Skills</h4>
+            <hr>
+            <ul>
+                <li>Html-5</li>
+                <li>Css/Bosstrap</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Angular</li>
+                <li>React</li>
+                <li>Git/GitHud</li>
+            </ul>
+        </div>
+        <div class="info">
+            <p class="text">{{textInfo}}</p>
+            <button class="conta">Contratar</button>
+        </div>
+        <img [src]=[img2] alt="">
+    </div>
+    
+</div>
+<app-cards></app-cards>
