@@ -80,6 +80,19 @@ p{
 li:hover{
     color: darkslategrey;
 }
+.coment{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.coment ul li{
+    list-style: none;
+    border-bottom: 2px solid darkslategrey;
+    margin-top: 2rem;
+}
 
 @media (max-width:300px) {
     .grid{

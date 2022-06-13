@@ -29,5 +29,10 @@ export class DevComponent implements OnInit {
     }
 
   }
+  com:Array<string> = [];
+
+  addItem(newItem: string) {
+    this.com.push(newItem);
+  }
 
 }

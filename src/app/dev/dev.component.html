@@ -27,4 +27,15 @@
     </div>
     
 </div>
-<app-cards></app-cards>
+<div>
+    <app-cards [data]="'Front-End'" [img]="'https://www.freelancermap.com/blog/wp-content/uploads/2020/06/Desarrollador-Front-End-perfil-profesional-tareas-experiencia-habilidades-salario.png'"></app-cards>
+    <app-cards [data]="'Angular'" [img]="'https://www.alvantia.com/wp-content/uploads/2018/10/imagen-Angular-2.jpg'"></app-cards>
+    <app-cards [data]="'JavaScript'" [img]="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYAtAONVuVVGqgV8RXwcmDsw81wwPhittDw&usqp=CAU'"></app-cards>
+</div>
+<div class="coment">
+    <h1>Comentarios</h1>
+    <ul>
+        <li *ngFor="let item of com">{{item}}</li>
+    </ul>
+</div>
+<app-coment (newItem)="addItem($event)"></app-coment>
